@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
   
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    
+    <ImageView
+      android:id="@+id/imageview_app_icon"
+      android:layout_width="164dp"
+      android:layout_height="164dp"
+      android:rotation="18"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.2"
+      app:srcCompat="@drawable/ic_memory_game" />
+    
+    <Button
+      android:id="@+id/button_game_start"
+      style="@style/NavigationButton"
+      android:layout_marginTop="32dp"
+      android:text="@string/navigation_button_go_to_game_setting"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/imageview_app_icon" />
+    
+    <Button
+      android:id="@+id/button_record"
+      style="@style/NavigationButton"
+      android:layout_marginTop="32dp"
+      android:text="@string/navigation_button_go_to_record"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/button_game_start" />
   
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
