@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main">
-
+  xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+  app:startDestination="@id/mainFragment">
+  
+  <fragment
+    android:id="@+id/mainFragment"
+    android:name="com.example.memorygame.MainFragment"
+    android:label="MainFragment" >
+    <action
+      android:id="@+id/action_mainFragment_to_gameSettingFragment"
+      app:destination="@id/gameSettingFragment" />
+    <action
+      android:id="@+id/action_mainFragment_to_recordFragment"
+      app:destination="@id/recordFragment" />
+  </fragment>
+  <fragment
+    android:id="@+id/gameSettingFragment"
+    android:name="com.example.memorygame.GameSettingFragment"
+    android:label="GameSettingFragment" >
+    <action
+      android:id="@+id/action_gameSettingFragment_to_gameFragment"
+      app:destination="@id/gameFragment"
+      app:popUpToInclusive="true" />
+  </fragment>
+  <fragment
+    android:id="@+id/recordFragment"
+    android:name="com.example.memorygame.RecordFragment"
+    android:label="RecordFragment" />
+  <fragment
+    android:id="@+id/gameFragment"
+    android:name="com.example.memorygame.GameFragment"
+    android:label="GameFragment" />
 </navigation>

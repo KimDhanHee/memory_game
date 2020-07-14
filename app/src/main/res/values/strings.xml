@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">MemoryGame</string>
+  <string name="navigation_button_go_to_game_setting">GameStart</string>
+  <string name="navigation_button_go_to_record">Record</string>
 </resources>
