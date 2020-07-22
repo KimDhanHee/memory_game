@@ -3,4 +3,8 @@
   <string name="app_name">메모리게임</string>
   <string name="navigation_button_go_to_game_setting">게임시작</string>
   <string name="navigation_button_go_to_record">기록</string>
+  <string name="navigation_button_go_to_game">게임시작</string>
+  
+  <string name="fragment_game_setting_round">라운드</string>
+  <string name="fragment_game_setting_multiply">×</string>
 </resources>

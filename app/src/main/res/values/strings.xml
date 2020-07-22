@@ -2,4 +2,8 @@
   <string name="app_name">MemoryGame</string>
   <string name="navigation_button_go_to_game_setting">GameStart</string>
   <string name="navigation_button_go_to_record">Record</string>
+  <string name="navigation_button_go_to_game">GameStart</string>
+  
+  <string name="fragment_game_setting_round">Round</string>
+  <string name="fragment_game_setting_multiply">×</string>
 </resources>

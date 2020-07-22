@@ -1,11 +1,6 @@
 package com.example.memorygame.view.dest
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.memorygame.R
 import com.example.memorygame.base.BaseFragment
 import com.example.memorygame.databinding.FragmentGameSettingBinding
@@ -17,5 +12,14 @@ class GameSettingFragment : BaseFragment<FragmentGameSettingBinding>(
   }
 
   override fun FragmentGameSettingBinding.setEventListener() {
+    buttonGameStart.setOnClickListener {
+      val round = numberpickerRound.value
+      val row = numberpickerRow.value
+      val col = numberpickerCol.value
+
+      findNavController().navigate(
+        GameSettingFragmentDirections.actionGameSettingFragmentToGameFragment(round, row, col)
+      )
+    }
   }
 }

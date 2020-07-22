@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
   
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    
+    <NumberPicker
+      android:id="@+id/numberpicker_round"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:theme="@style/NumberPicker"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/textview_round"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.1"
+      app:max="@{5}"
+      app:min="@{1}" />
+    
+    <TextView
+      android:id="@+id/textview_round"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:text="@string/fragment_game_setting_round"
+      android:textColor="@android:color/white"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="@id/numberpicker_round"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/numberpicker_round"
+      app:layout_constraintTop_toTopOf="@id/numberpicker_round" />
+    
+    <NumberPicker
+      android:id="@+id/numberpicker_row"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:theme="@style/NumberPicker"
+      app:layout_constraintEnd_toStartOf="@id/textview_multiply"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/numberpicker_round"
+      app:max="@{5}"
+      app:min="@{3}" />
+    
+    <TextView
+      android:id="@+id/textview_multiply"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/fragment_game_setting_multiply"
+      android:textColor="@android:color/white"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="@id/numberpicker_row"
+      app:layout_constraintEnd_toStartOf="@id/numberpicker_col"
+      app:layout_constraintStart_toEndOf="@id/numberpicker_row"
+      app:layout_constraintTop_toTopOf="@id/numberpicker_row" />
+    
+    <NumberPicker
+      android:id="@+id/numberpicker_col"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:theme="@style/NumberPicker"
+      app:layout_constraintBottom_toBottomOf="@id/textview_multiply"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/textview_multiply"
+      app:layout_constraintTop_toTopOf="@id/textview_multiply"
+      app:max="@{5}"
+      app:min="@{3}" />
+    
+    <Button
+      android:id="@+id/button_game_start"
+      style="@style/NavigationButton"
+      android:layout_marginTop="54dp"
+      android:text="@string/navigation_button_go_to_game"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/numberpicker_row" />
   
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

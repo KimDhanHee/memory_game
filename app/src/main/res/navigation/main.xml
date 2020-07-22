@@ -21,6 +21,7 @@
     <action
       android:id="@+id/action_gameSettingFragment_to_gameFragment"
       app:destination="@id/gameFragment"
+      app:popUpTo="@id/gameSettingFragment"
       app:popUpToInclusive="true" />
   </fragment>
   <fragment
@@ -30,5 +31,18 @@
   <fragment
     android:id="@+id/gameFragment"
     android:name="com.example.memorygame.view.dest.GameFragment"
-    android:label="GameFragment" />
+    android:label="GameFragment" >
+    <argument
+      android:name="round"
+      app:argType="integer"
+      android:defaultValue="1" />
+    <argument
+      android:name="row"
+      app:argType="integer"
+      android:defaultValue="3" />
+    <argument
+      android:name="col"
+      app:argType="integer"
+      android:defaultValue="3" />
+  </fragment>
 </navigation>
