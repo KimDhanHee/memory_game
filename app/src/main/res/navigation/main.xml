@@ -5,7 +5,7 @@
   
   <fragment
     android:id="@+id/mainFragment"
-    android:name="com.example.memorygame.MainFragment"
+    android:name="com.example.memorygame.view.dest.MainFragment"
     android:label="MainFragment" >
     <action
       android:id="@+id/action_mainFragment_to_gameSettingFragment"
@@ -16,7 +16,7 @@
   </fragment>
   <fragment
     android:id="@+id/gameSettingFragment"
-    android:name="com.example.memorygame.GameSettingFragment"
+    android:name="com.example.memorygame.view.dest.GameSettingFragment"
     android:label="GameSettingFragment" >
     <action
       android:id="@+id/action_gameSettingFragment_to_gameFragment"
@@ -25,10 +25,10 @@
   </fragment>
   <fragment
     android:id="@+id/recordFragment"
-    android:name="com.example.memorygame.RecordFragment"
+    android:name="com.example.memorygame.view.dest.RecordFragment"
     android:label="RecordFragment" />
   <fragment
     android:id="@+id/gameFragment"
-    android:name="com.example.memorygame.GameFragment"
+    android:name="com.example.memorygame.view.dest.GameFragment"
     android:label="GameFragment" />
 </navigation>
