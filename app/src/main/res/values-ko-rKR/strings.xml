@@ -7,4 +7,9 @@
   
   <string name="fragment_game_setting_round">라운드</string>
   <string name="fragment_game_setting_multiply">×</string>
+  
+  <string name="fragment_game_progress_ready">준비</string>
+  <string name="fragment_game_progress_start">시작</string>
+  <string name="fragment_game_progress_wrong">땡!!</string>
+  <string name="fragment_game_round">%d / %d</string>
 </resources>

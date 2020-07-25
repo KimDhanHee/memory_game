@@ -6,4 +6,9 @@
   
   <string name="fragment_game_setting_round">Round</string>
   <string name="fragment_game_setting_multiply">×</string>
+  
+  <string name="fragment_game_progress_ready">Ready</string>
+  <string name="fragment_game_progress_start">Start</string>
+  <string name="fragment_game_progress_wrong">Wrong</string>
+  <string name="fragment_game_round">%d / %d</string>
 </resources>
