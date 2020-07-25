@@ -22,6 +22,7 @@ abstract class BaseFragment<VBD : ViewDataBinding>(
     container,
     false
   ).run {
+    lifecycleOwner = this@BaseFragment
 
     bindingViewData()
     setEventListener()
